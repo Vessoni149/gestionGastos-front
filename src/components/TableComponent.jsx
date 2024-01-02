@@ -5,7 +5,7 @@ import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
 import { showAlert } from '../functions';
 export function TableComponent(props) {
-const url = 'http://localhost:8080';
+const url = 'https://gestiongastosback.onrender.com';
 const [gastos, setGastos] = useState([]);
 const [id, setId] = useState('');
 const [concepto, setConcepto] = useState('');
