@@ -136,14 +136,17 @@ const [title, setTitle] = useState('');
     }
   }
 
+
+
   return (
     <div className='App'> 
       <div className='container-fluid'>
         <div className='row mt-3'>
-            <div className='col-md-4 offset-md-4'>
+          <h1 className='text-center'>Sistema gestor de gastos personales.</h1>
+            <div className='col-md-4 offset-md-4 pb-3 pt-3'>
               <div className='d-grid mx-auto'>
                 <button onClick={()=>{openModal(1)}} className='btn btn-dark' data-bs-toggle='modal' data-bs-target='#modalGastos'>
-                  <i className='fa-solid fa-circle-plus'></i>Añadir
+                  <i className='fa-solid fa-circle-plus'></i> Añadir gasto
                 </button>
               </div>
             </div>
@@ -237,11 +240,11 @@ const [title, setTitle] = useState('');
           </div>
         </div>
       </div>
-      <div>
+      <div className='container-fluid '>
         <h3>Gastos totales:</h3>
         <p>Agustin gasto: {totalAgustin}</p>
-        <p>Mariana gasto: {totalMariana}</p>
-        <p>{calcularDeuda()}</p>
+        <p >Mariana gasto: {totalMariana}</p>
+        <p className='fw-bold'>{calcularDeuda()}</p>
       </div>
     </div>
   )
