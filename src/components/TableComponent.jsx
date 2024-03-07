@@ -166,7 +166,7 @@ const [title, setTitle] = useState('');
                     <td>{gasto.pagador}</td>
                     <td>
                       <button onClick={()=>openModal(2, gasto.id, gasto.concepto, gasto.monto, gasto.pagador)}  
-                      className='btn btn-warning'
+                      className='btn btn-warning pb-1'
                       data-bs-toggle='modal'
                       data-bs-target='#modalGastos'>
                         <i className='fa-solid fa-edit'></i>
@@ -240,7 +240,7 @@ const [title, setTitle] = useState('');
           </div>
         </div>
       </div>
-      <div className='container-fluid '>
+      <div className='container-fluid col-12 col-lg-8 '>
         <h3>Gastos totales:</h3>
         <p>Agustin gasto: {totalAgustin}</p>
         <p >Mariana gasto: {totalMariana}</p>
